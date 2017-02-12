@@ -69,18 +69,45 @@ class Details{
 protocol HaveToThing{
     var subject: String {get set}
     var time: NSDate? {get set}
-    var allDay : Bool {get set}
+    var allDay : Bool? {get set}
     var alarm : NSDate? {get set}
 }
 
 
-class schedule : HaveToThing {
+class Schedule : HaveToThing {
     internal var subject: String = ""
     internal var time: NSDate?
-    internal var allDay: Bool
+    internal var allDay: Bool?
     internal var alarm: NSDate?
 
     var details : Details?
+    
+    init(_subject : String, _time: NSDate, _allDay :Bool, _alarm : NSDate, _details : Details?){
+        self.subject = _subject
+        self.time = _time
+        self.allDay = _allDay
+        self.alarm = _alarm
+        
+        if(_details == nil){
+            details = nil
+        }
+        else{
+            self.details = _details
+        }
+    }
+}
+
+class ToDo : HaveToThing{
+    internal var subject : String = ""
+    internal var time: NSDate?
+    internal var allDay: Bool?
+    internal var alarm: NSDate?
+    var done : Bool = false
+    var details : Details?
+    
+    init(_subject : String){
+        self.subject = _subject
+    }
     
     init(_subject : String, _time: NSDate, _allDay :Bool, _alarm : NSDate, _details : Details?){
         self.subject = _subject
