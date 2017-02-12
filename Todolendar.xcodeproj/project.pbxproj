@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		296580311E50453900F4DA0A /* Unit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296580301E50453900F4DA0A /* Unit.swift */; };
+		296580331E504B4400F4DA0A /* DefinedException.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296580321E504B4400F4DA0A /* DefinedException.swift */; };
 		29C3B67D1E4C9786001E76A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C3B67C1E4C9786001E76A1 /* AppDelegate.swift */; };
 		29C3B67F1E4C9786001E76A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C3B67E1E4C9786001E76A1 /* ViewController.swift */; };
 		29C3B6821E4C9787001E76A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29C3B6801E4C9787001E76A1 /* Main.storyboard */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		296580301E50453900F4DA0A /* Unit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Unit.swift; sourceTree = "<group>"; };
+		296580321E504B4400F4DA0A /* DefinedException.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefinedException.swift; sourceTree = "<group>"; };
 		29C3B6791E4C9786001E76A1 /* Todolendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todolendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29C3B67C1E4C9786001E76A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29C3B67E1E4C9786001E76A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,9 +82,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2965802F1E502A3600F4DA0A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				296580301E50453900F4DA0A /* Unit.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		29C3B6701E4C9786001E76A1 = {
 			isa = PBXGroup;
 			children = (
+				296580321E504B4400F4DA0A /* DefinedException.swift */,
+				2965802F1E502A3600F4DA0A /* Model */,
 				29C3B6AF1E4C9F00001E76A1 /* .gitignore */,
 				29C3B67B1E4C9786001E76A1 /* Todolendar */,
 				29C3B6931E4C9787001E76A1 /* TodolendarTests */,
@@ -267,6 +281,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				29C3B67F1E4C9786001E76A1 /* ViewController.swift in Sources */,
+				296580331E504B4400F4DA0A /* DefinedException.swift in Sources */,
+				296580311E50453900F4DA0A /* Unit.swift in Sources */,
 				29C3B67D1E4C9786001E76A1 /* AppDelegate.swift in Sources */,
 				29C3B6851E4C9787001E76A1 /* Todolendar.xcdatamodeld in Sources */,
 			);
